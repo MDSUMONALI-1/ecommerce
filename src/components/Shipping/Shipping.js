@@ -11,7 +11,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
 
-        fetch('http://localhost:5000/orders', {
+        fetch('http://https://pacific-earth-44302.herokuapp.com/:5000/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

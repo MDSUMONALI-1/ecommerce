@@ -15,7 +15,7 @@ const Shop = () => {
     const [displayProducts, setDisplayProducts] = useState([]);
     const size = 10;
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${page}&&size=${size}`)
+        fetch(`http://https://pacific-earth-44302.herokuapp.com/:5000/products?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data.products);
